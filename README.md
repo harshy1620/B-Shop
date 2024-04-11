@@ -1,5 +1,6 @@
 
 #Book Explorer App
+[Live Link] (https://b-shop-ivory.vercel.app/)
 
 The Book Explorer App is a responsive web application built with React.js, Redux Toolkit and Tailwind CSS. It leverages the Google Books API to fetch book data and provides users with a seamless experience to explore, search, and interact with a vast collection of books.
 
@@ -18,26 +19,20 @@ The Book Explorer App is a responsive web application built with React.js, Redux
 
 
 #Installation
-- Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/book-explorer.git
-- Navigate to the project directory:
-bash
-Copy code
-cd book-explorer
+- Clone the repository: git clone https://github.com/yourusername/book-explorer.git
+- Navigate to the project directory: cd book-explorer
 
 #Install dependencies:
 - npm install
   
 #Start the development server:
-- npm start
-- Open the app in your browser at http://localhost:3000.
+- npm run dev
+- Open the app in your browser at http://localhost:5173.
   
 #Usage
 - Explore Books : Users can explore various books.
 - Book Detail: Click on a book to view detailed information.
-Filter by Author: Use the author filter to narrow down books by specific authors.
+- Filter by Author: Use the author filter to narrow down books by specific authors.
 - Theme Toggle: Switch between dark and light themes for a personalized reading experience.
 - Favorites: Mark books as favorites and access them in the favorites section. Remove books from favorites if desired.
   
@@ -45,6 +40,6 @@ Filter by Author: Use the author filter to narrow down books by specific authors
 
 #Contact
 For inquiries or feedback, you can reach out via:
-- Email: youremail@example.com
+- Email: harshyadav6642@gmail.com
 
 Feel free to customize and add more details as needed!
