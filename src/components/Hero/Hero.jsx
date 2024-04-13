@@ -8,16 +8,16 @@ const HeroData = [
   {
     id: 1,
     img: Image1,
-    subtitle: "J.K. Rowling",
-    title: "Thriller",
-    title2: "Harry Potter",
+    subtitle: "Paulo Coelho",
+    title: "Quest",
+    title2: "The  Alchemist",
   },
   {
     id: 2,
     img: Image2,
-    subtitle: "Paulo Coelho",
-    title: "Quest",
-    title2: "The  Alchemist",
+    subtitle: "J.K. Rowling",
+    title: "Thriller",
+    title2: "Harry Potter",
   },
   {
     id: 3,
