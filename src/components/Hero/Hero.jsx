@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 import Image3 from "../../assets/hero/becoming.webp";
-import Image1 from "../../assets/hero/harry.png";
-import Image2 from "../../assets/hero/alchemist.png";
+import Image2 from "../../assets/hero/harry.png";
+import Image1 from "../../assets/hero/alchemist.png";
 
 const HeroData = [
   {
@@ -20,7 +20,7 @@ const HeroData = [
     title2: "The  Alchemist",
   },
   {
-    id: 1,
+    id: 3,
     img: Image3,
     subtitle: "Michelle Obama",
     title: "Autobiography",
@@ -84,8 +84,7 @@ const Hero = () => {
                       data-aos-offset="0"
                       data-aos-duration="500"
                       data-aos-delay="300"
-                    >
-                    </div>
+                    ></div>
                   </div>
                   {/* Img section */}
                   <div className="order-1 sm:order-2">

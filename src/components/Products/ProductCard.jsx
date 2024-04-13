@@ -1,43 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaHeart, FaShoppingCart } from "react-icons/fa";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { addToFavorites, addToCart } from "../../redux/bookSlice";
-import { useSelector, useDispatch } from "react-redux";
 
 const ProductCard = ({ data }) => {
-  const dispatch = useDispatch();
-  const favorites = useSelector((state) => state.book.favorites);
-  const cartItems = useSelector((state) => state.book.cartItems);
-
-  const handleAddToFavorites = (book) => {
-    const isBookInFavorites = favorites.some(
-      (favorite) => favorite.id === book.id
-    );
-    if (!isBookInFavorites) {
-      dispatch(addToFavorites(book));
-      toast.success("Book is added to Favorites");
-    } else {
-      toast.warn("Book is already in Favorites");
-    }
-  };
-
-  const handleAddToCart = (book) => {
-    const isBookInCart = cartItems?.some(
-      (cartItem) => cartItem?.id === book.id
-    );
-    if (!isBookInCart) {
-      dispatch(addToCart(book));
-      toast.success("Book is added to Cart");
-    } else {
-      toast.warn("Book is already in Cart");
-    }
-  };
-
   return (
     <div className="mb-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 place-items-center">
         {/* card section */}
         {data.map((book, index) => (
           <div key={index} className="group w-[300px]">
@@ -61,16 +28,6 @@ const ProductCard = ({ data }) => {
                 </div>
               </div>
             </Link>
-            {/* <div className="flex justify-start items-center gap-5">
-                <button className="flex items-center space-x-1 text-primary hover:text-blue-700 focus:outline-none" onClick={() => handleAddToFavorites(book)}>
-                  <FaHeart className="w-5 h-5" />
-                 
-                </button>
-                <button className="flex items-center space-x-1 text-green-500 hover:text-green-700 focus:outline-none" onClick={() => handleAddToCart(book)}>
-                  <FaShoppingCart className="w-5 h-5" />
-                 
-                </button>
-              </div> */}
           </div>
         ))}
       </div>

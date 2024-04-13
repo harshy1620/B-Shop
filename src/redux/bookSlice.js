@@ -25,7 +25,7 @@ const bookSlice = createSlice({
     },
     addToCart: (state, action) => {
       const bookToAddToCart = action.payload;
-      state.cartItems.push({...bookToAddToCart, quantity: 1});
+      state.cartItems.push({ ...bookToAddToCart, quantity: 1 });
     },
     removeFromCart: (state, action) => {
       const bookToRemoveFromCartId = action.payload;
@@ -39,9 +39,7 @@ const bookSlice = createSlice({
       const bookToUpdateIndex = state.cartItems.findIndex(
         (book) => book.id === itemId
       );
-      if (bookToUpdateIndex !== -1 && !isNaN(parsedQuantity)) {
-        state.cartItems[bookToUpdateIndex].quantity = parsedQuantity;
-      }
+      state.cartItems[bookToUpdateIndex].quantity = parsedQuantity;
     },
   },
 });
